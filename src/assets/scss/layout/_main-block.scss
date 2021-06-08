@@ -4,16 +4,36 @@
     background: url(../images/main/bg-main.jpg) no-repeat;
     background-size: cover;
     background-position: 62% 0;
+    @include media (sm) {
+        background-position: center;
+    }
+
     @extend %container;
+
     &__inner {
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: 655px;
+
+        @include media (md) {
+            height: 840px;
+        }
     }
 
     &__title {
         @include font (32px, 600, 39px, $primaryColor);
+        max-width: 247px;
+        margin-top: -6px;
+
+        @include media (sm) {
+            max-width: 596px;
+            @include font (40px, 600, 49px, $primaryColor);
+        }
+        @include media (md) {
+            max-width: 887px;
+            width: 100%;
+        }
 
         span {
             @include font (32px, 600, 39px, $assetsColor);
