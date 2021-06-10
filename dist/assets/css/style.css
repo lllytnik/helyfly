@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* === BASE === */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Castom
@@ -616,15 +617,24 @@ template {
 
 .helicopter {
     font-family: 'Montserrat', sans-serif;
+    padding: 40px 0 30px 0;
 }
 
 .helicopter__inner {
-    display: -ms-flexbox;
-    display: flex;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 1fr;
     -ms-flex-direction: column;
     flex-direction: column;
     -ms-flex-align: center;
     align-items: center;
+}
+
+@media (min-width: 1280px) {
+    .helicopter__inner {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
 }
 
 .helicopter__title {
@@ -633,6 +643,232 @@ template {
     line-height: 34px;
     color: #37373F;
     max-width: 180px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1280px) {
+    .helicopter__title {
+        margin: 0;
+    }
+}
+
+.helicopter__photo {
+    width: 100%;
+}
+
+@media (min-width: 1280px) {
+    .helicopter__photo {
+        width: 554px;
+        height: 374px;
+        grid-area: 1/2/5/3;
+    }
+}
+
+.helicopter__img {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 1280px) {
+    .helicopter__img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: 0 -100px;
+        object-position: 0 -100px;
+        grid-area: 1/2/7/3;
+        margin-top: 0;
+    }
+}
+
+.helicopter__wrapper {
+    width: 100%;
+}
+
+@media (min-width: 1280px) {
+    .helicopter__wrapper {
+        grid-area: 2/1/5/2;
+    }
+}
+
+.helicopter__text {
+    margin-top: 30px;
+    max-width: 430px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #37373F;
+}
+
+@media (min-width: 1280px) {
+    .helicopter__text {
+        margin-top: 0px;
+    }
+}
+
+.helicopter__list {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #37373F;
+    margin-top: 25px;
+    list-style: none;
+}
+
+.helicopter__item {
+    position: relative;
+    padding-left: 45px;
+}
+
+.helicopter__item:nth-child(1):before {
+    content: '';
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    background: url(../images/helicopter/time.png);
+}
+
+.helicopter__item:nth-child(2) {
+    margin-top: 40px;
+}
+
+.helicopter__item:nth-child(2):before {
+    content: '';
+    width: 35px;
+    height: 28px;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    background: url(../images/helicopter/fotocamera.png);
+}
+
+.helicopter__item:nth-child(3) {
+    margin-top: 30px;
+}
+
+.helicopter__item:nth-child(3):before {
+    content: '';
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    background: url(../images/helicopter/map.png);
+}
+
+.helicopter__item:last-child {
+    margin-top: 32px;
+}
+
+.helicopter__item:last-child:before {
+    content: '';
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    background: url(../images/helicopter/speech.png);
+}
+
+.helicopter__feedback {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+    height: 70px;
+    border-top: 1px solid #C7C7C7;
+    border-bottom: 1px solid #C7C7C7;
+}
+
+.helicopter__wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-left: 13px;
+    height: 43px;
+}
+
+@media (min-width: 576px) {
+    .helicopter__wrap {
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+.helicopter__subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #37373F;
+}
+
+@media (min-width: 576px) {
+    .helicopter__subtitle {
+        margin-right: 14px;
+    }
+}
+
+.helicopter__span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #37373F;
+}
+
+.rating-area {
+    margin-top: 0px;
+    overflow: hidden;
+    width: 115px;
+}
+
+.rating-area:not(:checked) > input {
+    display: none;
+}
+
+.rating-area:not(:checked) > label {
+    float: right;
+    width: 23px;
+    padding: 0;
+    cursor: pointer;
+    font-size: 17px;
+    line-height: 18px;
+    color: #FC9809;
+}
+
+.rating-area:not(:checked) > label:before {
+    content: '★';
+}
+
+.rating-area > input:checked ~ label {
+    color: #FC9809;
+}
+
+.rating-area:not(:checked) > label:hover,
+  .rating-area:not(:checked) > label:hover ~ label {
+    color: #FC9809;
+}
+
+.rating-area > input:checked + label:hover,
+  .rating-area > input:checked + label:hover ~ label,
+  .rating-area > input:checked ~ label:hover,
+  .rating-area > input:checked ~ label:hover ~ label,
+  .rating-area > label:hover ~ input:checked ~ label {
+    color: #FC9809;
+}
+
+.rating-area > label:active {
+    position: relative;
 }
 
 /* === COMPONENTS === */

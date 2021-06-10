@@ -15,7 +15,6 @@ $breakpoints:(
 );
 
 %container {
-    .container {
         padding: 0 15px;
 
         @media screen and (min-width: 576px) {
@@ -31,4 +30,3 @@ $breakpoints:(
             margin: 0 auto;
         }
     }
-}

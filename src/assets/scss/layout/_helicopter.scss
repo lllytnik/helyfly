@@ -1,7 +1,9 @@
 .helicopter {
     font-family: 'Montserrat', sans-serif;
     padding: 40px 0 30px 0;
-    @extend %container;
+    .container {
+        @extend %container;
+    }
 
     &__inner {
         /* border: 1px solid red; */

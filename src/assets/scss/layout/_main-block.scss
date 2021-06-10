@@ -8,7 +8,9 @@
         background-position: center;
     }
 
-    @extend %container;
+    .container {
+        @extend %container;
+    }
 
     &__inner {
         display: flex;
