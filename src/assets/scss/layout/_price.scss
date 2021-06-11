@@ -1,0 +1,98 @@
+.price {
+
+    font-family: 'Montserrat', sans-serif;
+
+    .container {
+        @extend %container;
+    }
+
+    &__inner {
+        margin-top: 20px;
+        border: 1px solid $secondaryColor;
+        @include media (md) {
+            max-width: 770px;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        @include font (26px, 400, 30px, $textColor);
+
+        @include media (sm) {
+            text-align: left;
+        }
+    }
+
+    &__month {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        border-bottom: 1px solid #C7C7C7;
+    }
+
+    &__text {
+        text-align: center;
+        @include font (18px, 400, 26px, $textColor);
+    }
+
+    &__span-text {
+        @include font (18px, 500, 26px, $textColor);
+    }
+
+    &__span-calendar {
+        display: none;
+        margin-left: 15px;
+
+        @include media (xs) {
+            display: block;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 20px 30px 20px;
+        &:nth-child(2){
+            border-bottom: 1px solid #C7C7C7;
+        }
+
+        @include media (xs) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 85px;
+    }
+
+    &__span-time {
+
+        @include font (18px, 400, 26px, $textColor);
+    }
+
+    &__span-cost {
+
+        @include font (18px, 600, 26px, $textColor);
+    }
+
+    &__span-place {
+
+        @include font (18px, 400, 26px, $textColor);
+    }
+
+    &__btn {
+        cursor: pointer;
+        width: 130px;
+        height: 50px;
+        margin-top: 15px;
+        border: 1px solid $assetsColor;
+        background-color: transparent;
+        color: $assetsColor;
+
+    }
+}

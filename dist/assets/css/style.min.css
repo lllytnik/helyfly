@@ -322,16 +322,16 @@ template {
 /* === ABSTRACTS === */
 /* ===COLOR=== */
 /* ===MEDIA=== */
-.header .container, .main .container, .helicopter .container, .gellery .container, .about .container {
+.header .container, .main .container, .helicopter .container, .gellery .container, .about .container, .price .container {
   padding: 0 15px; }
   @media screen and (min-width: 576px) {
-    .header .container, .main .container, .helicopter .container, .gellery .container, .about .container {
+    .header .container, .main .container, .helicopter .container, .gellery .container, .about .container, .price .container {
       padding: 0 35px; } }
   @media screen and (min-width: 768px) {
-    .header .container, .main .container, .helicopter .container, .gellery .container, .about .container {
+    .header .container, .main .container, .helicopter .container, .gellery .container, .about .container, .price .container {
       padding: 0 50px; } }
   @media screen and (min-width: 1280px) {
-    .header .container, .main .container, .helicopter .container, .gellery .container, .about .container {
+    .header .container, .main .container, .helicopter .container, .gellery .container, .about .container, .price .container {
       padding: 0;
       max-width: 1140px;
       width: 100%;
@@ -729,11 +729,23 @@ template {
 
 .about {
   font-family: 'Montserrat', sans-serif;
-  padding: 4ç0px 0 20px 0; }
+  padding: 40px 0 20px 0; }
+  @media (min-width: 576px) {
+    .about {
+      border-bottom: 1px solid #C7C7C7; } }
+  @media (min-width: 1280px) {
+    .about__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto; } }
   .about__figure {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    @media (min-width: 1280px) {
+      .about__figure {
+        grid-area: 1/2/2/3;
+        justify-content: center; } }
   .about__avatar {
     position: relative; }
     .about__avatar::before {
@@ -756,7 +768,7 @@ template {
     line-height: 21px;
     color: #37373F; }
   .about__link {
-    width: 250px;
+    width: 220px;
     text-align: center;
     font-size: 14px;
     font-weight: 500;
@@ -793,6 +805,85 @@ template {
       height: 9px;
       position: absolute;
       background: url(../images/about/arrow.png) no-repeat; }
+
+.price {
+  font-family: 'Montserrat', sans-serif; }
+  .price__inner {
+    margin-top: 20px;
+    border: 1px solid #C7C7C7; }
+    @media (min-width: 1280px) {
+      .price__inner {
+        max-width: 770px; } }
+  .price__title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #37373F; }
+    @media (min-width: 768px) {
+      .price__title {
+        text-align: left; } }
+  .price__month {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid #C7C7C7; }
+  .price__text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #37373F; }
+  .price__span-text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #37373F; }
+  .price__span-calendar {
+    display: none;
+    margin-left: 15px; }
+    @media (min-width: 576px) {
+      .price__span-calendar {
+        display: block; } }
+  .price__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 30px 20px; }
+    .price__wrapper:nth-child(2) {
+      border-bottom: 1px solid #C7C7C7; }
+    @media (min-width: 576px) {
+      .price__wrapper {
+        flex-direction: row;
+        justify-content: space-between; } }
+  .price__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 85px; }
+  .price__span-time {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #37373F; }
+  .price__span-cost {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #37373F; }
+  .price__span-place {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #37373F; }
+  .price__btn {
+    cursor: pointer;
+    width: 130px;
+    height: 50px;
+    margin-top: 15px;
+    border: 1px solid #FC9809;
+    background-color: transparent;
+    color: #FC9809; }
 
 /* === COMPONENTS === */
 

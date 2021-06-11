@@ -1,15 +1,29 @@
 .about {
     font-family: 'Montserrat', sans-serif;
-    padding: 4ç0px 0 20px 0;
+    padding: 40px 0 20px 0;
 
     .container {
         @extend %container;
+    }
+    @include media (xs) {
+        border-bottom: 1px solid $secondaryColor;
+    }
+    &__inner {
+        @include media (md) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+        }
     }
 
     &__figure {
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include media (md) {
+            grid-area: 1/2/2/3;
+            justify-content: center;
+        }
     }
 
     &__avatar {
@@ -36,7 +50,7 @@
     }
 
     &__link {
-        width: 250px;
+        width: 220px;
         text-align: center;
         @include font (14px, 500, 21px, $linkColor);
     }
