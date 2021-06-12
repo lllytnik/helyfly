@@ -1,0 +1,32 @@
+.profile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    &__avatar {
+        position: relative;
+    }
+
+    &__img {
+        width: 76px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    &__name {
+        @include font (16px, 500, 19px, $textColor);
+    }
+
+    &__span {
+        @include font (14px, 500, 21px, $textColor);
+    }
+
+    &__link {
+        width: 150px;
+        @include font (14px, 500, 21px, $linkColor);
+    }
+}

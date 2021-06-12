@@ -5,10 +5,14 @@
     .container {
         @extend %container;
     }
-    @include media (xs) {
-        border-bottom: 1px solid $secondaryColor;
-    }
+
     &__inner {
+
+        @include media (xs) {
+            padding-bottom: 30px;
+            border-bottom: 1px solid $secondaryColor;
+        }
+
         @include media (md) {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -20,6 +24,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
         @include media (md) {
             grid-area: 1/2/2/3;
             justify-content: center;

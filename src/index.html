@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="assets/css/style.min.css">
     <title>Helyfly</title>
 </head>
@@ -161,10 +162,9 @@
         </div>
     </div>
     <div class="price">
-        <div class="container"> 
+        <div class="container">
             <h2 class="price__title">Доступная съемка <br> в ближайщее время</h2>
             <div class="price__inner">
-               
                 <div class="price__month">
                     <p class="price__text">Пятница, <span class="price__span-text">14</span> сентября</p>
                     <span class="price__span-calendar">
@@ -187,9 +187,77 @@
                     </div>
                     <button class="price__btn">Выбрать</button>
                 </div>
+
+                <div class="price__rating rating ">
+                    <img class="rating__icon-rating" src="./assets/images/helicopter/group.png" alt="">
+                    <div class="rating__wrap">
+                        <h4 class="rating__subtitle">Более <span class="rating__span">50</span> отзывов с
+                            оценкой</h4>
+                        <div class="rating__rating-area rating-area">
+                            <input type="radio" id="star-5" name="rating" value="5">
+                            <label for="star-5" title="Оценка «5»"></label>
+                            <input type="radio" id="star-4" name="rating" value="4">
+                            <label for="star-4" title="Оценка «4»"></label>
+                            <input type="radio" id="star-3" name="rating" value="3">
+                            <label for="star-3" title="Оценка «3»"></label>
+                            <input type="radio" id="star-2" name="rating" value="2">
+                            <label for="star-2" title="Оценка «2»"></label>
+                            <input type="radio" id="star-1" name="rating" value="1">
+                            <label for="star-1" title="Оценка «1»"></label>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="map">
+        <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/org/mezhdunarodny_aeroport_tonkontin/200410099933/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Международный аэропорт Тонконтин</a>
+            <a href="https://yandex.ru/maps/21175/honduras/category/airport/184108111/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Аэропорт в Гондурасе</a><iframe
+                src="https://yandex.ru/map-widget/v1/-/CCUanHTS1A" width="100%" height="420" frameborder="0"
+                allowfullscreen="true" style="position:relative;"></iframe></div>
+        <div class="container">
+            <div class="map__inner">
+                <div class="map__container swiper-container mySwiper">
+                    <div class="map__wrapper swiper-wrapper">
+                        <div class="map__box swiper-slide">
+                            <div class="map__number"><span class="map__span-number">1</span></div>
+                            <h4 class="map__title">Где встречаемся?</h4>
+                            <span class="map__subtitle">Москва</span>
+                        </div>
+                        <div class="map__box swiper-slide">
+                            <div class="map__number"><span class="map__span-number">2</span></div>
+                            <h4 class="map__title">Время съемки</h4>
+                            <span class="map__subtitle">3 часа</span>
+                        </div>
+                        <div class="map__box swiper-slide">
+                            <div class="map__number"><span class="map__span-number">3</span></div>
+                            <h4 class="map__title">Мест осталось:</h4>
+                            <span class="map__subtitle">2 места</span>
+                        </div>
+                    </div>
+                    <div class="map__button-next swiper-button-next"></div>
+                    <div class="map__button-prev swiper-button-prev"></div>
+                    <div class="map__pagination swiper-pagination"></div>
+                </div>
+                <div class="map__profile profile">
+                    <div class="profile__avatar">
+                        <img class="profile__img" src="./assets/images/about/ellipse.jpg" alt="photo">
+                    </div>
+                    <div class="profile__wrapper">
+                        <div class="profile__name">Марина Иванова</div>
+                        <span class="profile__span">Фотограф</span>
+                        <a class="profile__link" href="#">Показать больше
+                            информации о фотографе</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

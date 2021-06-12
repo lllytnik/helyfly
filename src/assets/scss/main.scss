@@ -11,8 +11,12 @@
 @import './layout/gellery';
 @import './layout/about';
 @import './layout/price';
+@import './layout/map';
 @import './layout/footer/footer';
 
 
 /* === COMPONENTS === */
 @import './components/buttons';
+@import './components/profile';
+@import './components/rating';
+@import './components/swiper-bundle.min';

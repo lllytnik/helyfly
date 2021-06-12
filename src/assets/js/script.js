@@ -10,4 +10,3 @@ var swiper = new Swiper(".mySwiper", {
     mousewheel: true,
     keyboard: true,
 });
-//# sourceMappingURL=script.js.map

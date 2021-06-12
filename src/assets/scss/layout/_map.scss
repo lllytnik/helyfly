@@ -1,0 +1,54 @@
+.map{
+    font-family: 'Montserrat', sans-serif;
+    padding: 40px 0 0px 0;
+
+    .container {
+        @extend %container;
+    }
+
+    &__inner {
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        margin: 40px auto;
+        max-width: 380px;
+        border: 1px solid $secondaryColor;
+    }
+    &__box{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+
+    }
+    &__number{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:65px;
+        height: 65px;
+        background-color: $assetsColor;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+    &__span-number{
+        @include font (30px, 700, 43px, $primaryColor);
+    }
+    &__title{
+        margin-top: 15px;
+        @include font (16px, 500, 23px, $textColor);
+    }
+    &__subtitle{
+        margin-top: 5px;
+        @include font (14px, 400, 20px, $textColor);
+    }
+
+}
+.swiper-container {
+    width: 250px;
+    height: 250px;
+    
+}

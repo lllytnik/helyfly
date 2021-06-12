@@ -4,13 +4,15 @@
     .container {
         @extend %container;
     }
-    @include media (sm) {
-        border-bottom: 1px solid $secondaryColor;
-    }
     &__inner {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include media (sm) {
+            padding-bottom: 30px;
+            border-bottom: 1px solid $secondaryColor;
+        }
 
     }
 
