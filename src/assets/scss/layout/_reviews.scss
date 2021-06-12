@@ -1,0 +1,128 @@
+.reviews {
+    font-family: 'Montserrat', sans-serif;
+    padding: 40px 0 30px 0;
+
+    .container {
+        @extend %container;
+    }
+
+    &__title {
+        @include font (26px, 500, 39px, $textColor);
+    }
+
+    &__box {
+        position: relative;
+        margin-top: 50px;
+    }
+
+    &__bl {
+        display: flex;
+
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 15px;
+
+    }
+
+    &__name {
+        @include font (16px, 500, 19px, $textColor);
+    }
+
+    &__profession {
+        margin-top: 10px;
+        @include font (14px, 400, 21px, $textColor);
+    }
+
+    &__rating {
+        margin-top: 10px;
+    }
+
+    &__commend {
+        margin: 15px 0 0 20px;
+        display: inline-block;
+        @include font (14px, 400, 21px, $textColorLight);
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 17px;
+            height: 15px;
+            top: 3px;
+            left: -20px;
+            position: absolute;
+            background: url(../images/reviews/check.png)
+        }
+
+        @include media (sm) {
+            position: absolute;
+            top: 57px;
+            left: 265px;
+        }
+
+    }
+
+    &__text {
+        margin-top: 20px;
+        @include font (14px, 400, 21px, $textColor);
+
+        @include media (xs) {
+            max-width: 505px;
+        }
+
+        @include media (sm) {
+            margin-left: 116px;
+        }
+    }
+
+    &__date {
+        display: inline-block;
+        margin-top: 40px;
+        @include font (14px, 400, 21px, $textColorLight);
+
+        @include media (xs) {
+            padding-bottom: 30px;
+            width: 480px;
+            border-bottom: 1px solid #C7C7C7;
+        }
+
+        @include media (sm) {
+            margin-left: 116px;
+        }
+    }
+
+    &__btn {
+        position: relative;
+        display: inherit;
+        margin: 0 auto;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        margin-top: 40px;
+        background-color: transparent;
+        @include font (17px, 500, 24px, $linkColor);
+
+        &::before {
+            content: '';
+            top: 10px;
+            left: -20px;
+            width: 11px;
+            height: 9px;
+            position: absolute;
+            background: url(../images/galleries/arrow.png) no-repeat;
+        }
+
+        &::after {
+            content: '';
+            top: 10px;
+            right: -20px;
+            width: 11px;
+            height: 9px;
+            position: absolute;
+            background: url(../images/galleries/arrow.png) no-repeat;
+        }
+    }
+}

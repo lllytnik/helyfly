@@ -1,9 +1,28 @@
-.map{
+.map {
     font-family: 'Montserrat', sans-serif;
     padding: 40px 0 0px 0;
+    position: relative;
 
     .container {
         @extend %container;
+    }
+
+    &__custom {
+        position: relative;
+        overflow: hidden;
+
+
+    }
+
+    &__iframe {
+        position: relative;
+        width: 100%;
+        height: 420px;
+        border: none;
+
+        @include media (md) {
+            height: 520px;
+        }
     }
 
     &__inner {
@@ -13,19 +32,25 @@
         margin: 40px auto;
         max-width: 380px;
         border: 1px solid $secondaryColor;
+
+        @include media (md) {
+            display: none;
+        }
     }
-    &__box{
+
+    &__box {
         display: flex;
         flex-direction: column;
-        align-items:center;
+        align-items: center;
         justify-content: center;
 
     }
-    &__number{
+
+    &__number {
         display: flex;
         justify-content: center;
         align-items: center;
-        width:65px;
+        width: 65px;
         height: 65px;
         background-color: $assetsColor;
         border-radius: 50%;
@@ -33,22 +58,91 @@
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
-}
-    &__span-number{
+    }
+
+    &__span-number {
         @include font (30px, 700, 43px, $primaryColor);
     }
-    &__title{
+
+    &__title {
         margin-top: 15px;
         @include font (16px, 500, 23px, $textColor);
     }
-    &__subtitle{
+
+    &__subtitle {
         margin-top: 5px;
         @include font (14px, 400, 20px, $textColor);
     }
 
+    &__profile {
+        justify-content: center;
+    }
+
 }
+
 .swiper-container {
     width: 250px;
     height: 250px;
-    
+
+}
+
+.wrap {
+    display: none;
+    width: 420px;
+    height: 470px;
+    position: absolute;
+    top: 60px;
+    background-color: $primaryColor;
+    font-family: 'Montserrat', sans-serif;
+
+    @include media (md) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around
+    }
+
+
+    &__box {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+
+    }
+
+    &__bl {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    &__number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 65px;
+        height: 65px;
+        background-color: $assetsColor;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+
+    &__span-number {
+        @include font (30px, 700, 43px, $primaryColor);
+    }
+
+    &__title {
+        @include font (16px, 500, 23px, $textColor);
+    }
+
+    &__subtitle {
+        margin-top: 5px;
+        @include font (14px, 400, 20px, $textColor);
+    }
+
+    &__profile {
+        margin-left: 30px;
+    }
 }

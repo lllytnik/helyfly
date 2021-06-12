@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="assets/css/style.min.css">
     <title>Helyfly</title>
 </head>
@@ -211,13 +211,9 @@
         </div>
     </div>
     <div class="map">
-        <div style="position:relative;overflow:hidden;"><a
-                href="https://yandex.ru/maps/org/mezhdunarodny_aeroport_tonkontin/200410099933/?utm_medium=mapframe&utm_source=maps"
-                style="color:#eee;font-size:12px;position:absolute;top:0px;">Международный аэропорт Тонконтин</a>
-            <a href="https://yandex.ru/maps/21175/honduras/category/airport/184108111/?utm_medium=mapframe&utm_source=maps"
-                style="color:#eee;font-size:12px;position:absolute;top:14px;">Аэропорт в Гондурасе</a><iframe
-                src="https://yandex.ru/map-widget/v1/-/CCUanHTS1A" width="100%" height="420" frameborder="0"
-                allowfullscreen="true" style="position:relative;"></iframe></div>
+        <div class="map__custom">
+            <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/-/CCUanHTS1A"
+                allowfullscreen="true"></iframe></div>
         <div class="container">
             <div class="map__inner">
                 <div class="map__container swiper-container mySwiper">
@@ -244,7 +240,7 @@
                 </div>
                 <div class="map__profile profile">
                     <div class="profile__avatar">
-                        <img class="profile__img" src="./assets/images/about/ellipse.jpg" alt="photo">
+                        <img class="profile__img profile__img--xs" src="./assets/images/about/ellipse.jpg" alt="photo">
                     </div>
                     <div class="profile__wrapper">
                         <div class="profile__name">Марина Иванова</div>
@@ -254,8 +250,141 @@
                     </div>
                 </div>
             </div>
+            <div class="map__wrap wrap">
+                <div class="wrap__box">
+                    <div class="wrap__number"><span class="wrap__span-number">1</span></div>
+                    <div class="wrap__bl">
+                        <h4 class="wrap__title">Где встречаемся?</h4>
+                        <span class="wrap__subtitle">Москва</span>
+                    </div>
+                </div>
+                <div class="wrap__box">
+                    <div class="wrap__number"><span class="wrap__span-number">2</span></div>
+                    <div class="wrap__bl">
+                        <h4 class="wrap__title">Время съемки</h4>
+                        <span class="map__subtitle">3 часа</span>
+                    </div>
+                </div>
+                <div class="wrap__box">
+                    <div class="wrap__number"><span class="wrap__span-number">3</span></div>
+                    <div class="wrap__bl">
+                        <h4 class="wrap__title">Мест осталось:</h4>
+                        <span class="wrap__subtitle">2 места</span>
+                    </div>
+                </div>
+
+                <div class="wrap__profile profile">
+                    <div class="profile__avatar">
+                        <img class="profile__img profile__img--xs" src="./assets/images/profile/ellipse.png"
+                            alt="photo">
+                    </div>
+                    <div class="profile__wrapper">
+                        <div class="profile__name">Марина Иванова</div>
+                        <span class="profile__span">Фотограф</span>
+                        <a class="profile__link profile__link--map" href="#">Показать больше
+                            информации</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="reviews">
+        <div class="container">
+            <h2 class="reviews__title">Отзывы</h2>
+
+            <div class="reviews__box">
+                <div class="reviews__bl">
+                    <div class="reviews__avatar">
+                        <img class="reviews__img" src="./assets/images/reviews/foto-1.png" alt="photo">
+                    </div>
+                    <div class="reviews__wrapper">
+                        <span class="reviews__name">Валерия Антонова</span>
+                        <span class="reviews__profession">Арт-директор</span>
+                        <div class="reviews__rating rating__rating-area rating-area">
+                            <input type="radio" id="star-5" name="rating" value="5">
+                            <label for="star-5" title="Оценка «5»"></label>
+                            <input type="radio" id="star-4" name="rating" value="4">
+                            <label for="star-4" title="Оценка «4»"></label>
+                            <input type="radio" id="star-3" name="rating" value="3">
+                            <label for="star-3" title="Оценка «3»"></label>
+                            <input type="radio" id="star-2" name="rating" value="2">
+                            <label for="star-2" title="Оценка «2»"></label>
+                            <input type="radio" id="star-1" name="rating" value="1">
+                            <label for="star-1" title="Оценка «1»"></label>
+                        </div>
+                    </div>
+                </div>
+                <span class="reviews__commend">Супер! Я бы заказала съемку снова!</span>
+                <p class="reviews__text">Хотим выразить огромную благодарность вашей компании! Получили море
+                    ощущений, все прошло просто замечательно. Фотки получились великолепные, отдельное спасибо
+                    фотографу!</p>
+                <span class="reviews__date">27 Апреля, 2019г.</span>
+            </div>
+            <div class="reviews__box">
+                <div class="reviews__bl">
+                    <div class="reviews__avatar">
+                        <img class="reviews__img" src="./assets/images/reviews/foto-2.png" alt="photo">
+                    </div>
+                    <div class="reviews__wrapper">
+                        <span class="reviews__name">Виталий Петров</span>
+                        <span class="reviews__profession">Фотограф</span>
+                        <div class="reviews__rating rating__rating-area rating-area">
+                            <input type="radio" id="star-5" name="rating" value="5">
+                            <label for="star-5" title="Оценка «5»"></label>
+                            <input type="radio" id="star-4" name="rating" value="4">
+                            <label for="star-4" title="Оценка «4»"></label>
+                            <input type="radio" id="star-3" name="rating" value="3">
+                            <label for="star-3" title="Оценка «3»"></label>
+                            <input type="radio" id="star-2" name="rating" value="2">
+                            <label for="star-2" title="Оценка «2»"></label>
+                            <input type="radio" id="star-1" name="rating" value="1">
+                            <label for="star-1" title="Оценка «1»"></label>
+                        </div>
+                    </div>
+                </div>
+                <span class="reviews__commend">Супер! Я бы заказала съемку снова!</span>
+                <p class="reviews__text">Восторг! :) Очень понравилось :) Захватили последний теплый, солнечный
+                    октябрьский день :) Впечатлило всё: сам вертолет, взлет, полёт, приземление.
+                    Организация полёта отличная. Спасибо!</p>
+                <span class="reviews__date">19 Апреля, 2019г.</span>
+            </div>
+            <div class="reviews__box">
+                <div class="reviews__bl">
+                    <div class="reviews__avatar">
+                        <img class="reviews__img" src="./assets/images/reviews/foto-3.png" alt="photo">
+                    </div>
+                    <div class="reviews__wrapper">
+                        <span class="reviews__name">Джим Керри</span>
+                        <span class="reviews__profession">Арт-директор</span>
+                        <div class="reviews__rating rating__rating-area rating-area">
+                            <input type="radio" id="star-5" name="rating" value="5">
+                            <label for="star-5" title="Оценка «5»"></label>
+                            <input type="radio" id="star-4" name="rating" value="4">
+                            <label for="star-4" title="Оценка «4»"></label>
+                            <input type="radio" id="star-3" name="rating" value="3">
+                            <label for="star-3" title="Оценка «3»"></label>
+                            <input type="radio" id="star-2" name="rating" value="2">
+                            <label for="star-2" title="Оценка «2»"></label>
+                            <input type="radio" id="star-1" name="rating" value="1">
+                            <label for="star-1" title="Оценка «1»"></label>
+                        </div>
+                    </div>
+                </div>
+                <span class="reviews__commend">Супер! Я бы заказала съемку снова!</span>
+                <p class="reviews__text">Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати закуски
+                    были вкусными и сытными))Мы
+                    с собой ничего не брали. Сами много фоткались,поэтому воспоминания обалденные!!!)) А еще нам всем
+                    напечатали по сертификату воздухоплавателя, правда некоторые ленятся за ним съездить))) Но все равно
+                    приятно. Короче, Презентстар – проверено. Оценка: пять!</p>
+                <span class="reviews__date">27 Апреля, 2019г.</span>
+            </div>
+
+            <button class="reviews__btn">Показать (134)</button>
+
+        </div>
+    </div>
+
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>

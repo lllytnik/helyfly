@@ -4,6 +4,11 @@
 /* === ABSTRACTS === */
 @import './abstracts/vars';
 @import './abstracts/mixins';
+/* === COMPONENTS === */
+@import './components/buttons';
+@import './components/profile';
+@import './components/rating';
+@import './components/swiper-bundle.min';
 /* === LAYOUT === */
 @import './layout/header/header';
 @import './layout/main-block';
@@ -12,11 +17,5 @@
 @import './layout/about';
 @import './layout/price';
 @import './layout/map';
+@import './layout/reviews';
 @import './layout/footer/footer';
-
-
-/* === COMPONENTS === */
-@import './components/buttons';
-@import './components/profile';
-@import './components/rating';
-@import './components/swiper-bundle.min';

@@ -1,6 +1,6 @@
 .profile {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     margin-bottom: 10px;
 
     &__avatar {
@@ -8,7 +8,7 @@
     }
 
     &__img {
-        width: 76px;
+        width: 139px;
     }
 
     &__wrapper {
@@ -28,5 +28,12 @@
     &__link {
         width: 150px;
         @include font (14px, 500, 21px, $linkColor);
+    }
+
+    &__img--xs {
+        width: 67px
+    }
+    &__link--map {
+        width: 100%;
     }
 }
