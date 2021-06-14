@@ -361,24 +361,24 @@ template {
 /* === ABSTRACTS === */
 /* ===COLOR=== */
 /* ===MEDIA=== */
-.header .container, .main .container, .helicopter .container, .gellery .container, .about .container, .price .container, .map .container, .reviews .container {
+.header .container, .main .container, .helicopter .container, .gellery .container, .about .container, .price .container, .map .container, .reviews .container, .footer .container {
     padding: 0 15px;
 }
 
 @media screen and (min-width: 576px) {
-    .header .container, .main .container, .helicopter .container, .gellery .container, .about .container, .price .container, .map .container, .reviews .container {
+    .header .container, .main .container, .helicopter .container, .gellery .container, .about .container, .price .container, .map .container, .reviews .container, .footer .container {
         padding: 0 35px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .header .container, .main .container, .helicopter .container, .gellery .container, .about .container, .price .container, .map .container, .reviews .container {
+    .header .container, .main .container, .helicopter .container, .gellery .container, .about .container, .price .container, .map .container, .reviews .container, .footer .container {
         padding: 0 50px;
     }
 }
 
 @media screen and (min-width: 1280px) {
-    .header .container, .main .container, .helicopter .container, .gellery .container, .about .container, .price .container, .map .container, .reviews .container {
+    .header .container, .main .container, .helicopter .container, .gellery .container, .about .container, .price .container, .map .container, .reviews .container, .footer .container {
         padding: 0;
         max-width: 1140px;
         width: 100%;
