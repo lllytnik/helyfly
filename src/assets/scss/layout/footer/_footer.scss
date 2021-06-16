@@ -29,11 +29,12 @@
 
         @include media (xs) {
             border-bottom: none;
-            grid-area: 1/2/1/7;
+            grid-area: 1/1/1/7;
         }
 
         @include media (md) {
             align-self: center;
+            grid-area: 1/2/1/7;
             padding-bottom: 0;
             padding-right: 60px;
 
@@ -135,6 +136,7 @@
         @include media (xs) {
             align-self: center;
             margin-top: 0;
+            grid-area: 2/1/2/2;
 
         }
 

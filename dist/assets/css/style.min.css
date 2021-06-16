@@ -1754,10 +1754,11 @@ button.swiper-pagination-bullet {
     @media (min-width: 576px) {
       .footer__wrapper-top {
         border-bottom: none;
-        grid-area: 1/2/1/7; } }
+        grid-area: 1/1/1/7; } }
     @media (min-width: 1280px) {
       .footer__wrapper-top {
         align-self: center;
+        grid-area: 1/2/1/7;
         padding-bottom: 0;
         padding-right: 60px; } }
   .footer__logo {
@@ -1837,7 +1838,8 @@ button.swiper-pagination-bullet {
     @media (min-width: 576px) {
       .footer__list-pay {
         align-self: center;
-        margin-top: 0; } }
+        margin-top: 0;
+        grid-area: 2/1/2/2; } }
     @media (min-width: 1280px) {
       .footer__list-pay {
         grid-area: 2/2/2/3; } }
