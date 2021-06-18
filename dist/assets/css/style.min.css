@@ -1634,6 +1634,11 @@ button.swiper-pagination-bullet {
   .reviews__box {
     position: relative;
     margin-top: 50px; }
+    .reviews__box:nth-child(4) {
+      display: none; }
+    @media (min-width: 576px) {
+      .reviews__box:nth-child(4) {
+        display: block; } }
   .reviews__bl {
     display: flex; }
   .reviews__wrapper {
@@ -1734,17 +1739,20 @@ button.swiper-pagination-bullet {
 
 .footer {
   padding: 0 0 20px 0;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  position: relative; }
   .footer__inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto; }
+    grid-template-rows: auto;
+    gap: 10px 0; }
     @media (min-width: 576px) {
       .footer__inner {
         grid-template-columns: repeat(5, 1fr); } }
     @media (min-width: 1280px) {
       .footer__inner {
-        grid-template-columns: 40px repeat(5, 1fr) 40px; } }
+        grid-template-columns: 40px repeat(5, 1fr) 40px;
+        gap: 40px 0; } }
   .footer__wrapper-top {
     display: flex;
     justify-content: space-between;
@@ -1843,5 +1851,12 @@ button.swiper-pagination-bullet {
     @media (min-width: 1280px) {
       .footer__list-pay {
         grid-area: 2/2/2/3; } }
+  .footer__castom {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background: #FAF9F8;
+    z-index: -1;
+    bottom: 0; }
 
 /*# sourceMappingURL=style.min.css.map */
